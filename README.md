@@ -1,5 +1,5 @@
-# Denoise-multi-weak-sources-rep
-Reproduce Multi-Source-Weak-Supervision
+# Denoise-multi-weak-sources Reproduction Project
+Reproduce Multi-Source-Weak-Supervision 
 
 Learning from Multi-SourceWeak Supervision for Deep Text Classification
 
