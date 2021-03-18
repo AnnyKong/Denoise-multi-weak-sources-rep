@@ -14,7 +14,7 @@ Python 3.6
 
 The code can be run on either CPU or GPU environment.
 
-### Training the model and make predictions
+### Training the label-denoising model and make predictions
 To run the model, first unzip the dataset file, and then using either way is fine:
 
 (Note: due to the github space limitation, we only include the three dataset. 
@@ -43,6 +43,27 @@ The trained model will be stored at the *model* folder.
 The running details output can be found at *log_files* folder.
 
 The test accuracy can be found at *ft_logs* folder.
+
+### Training the BERT-MLP model and make predictions
+
+```css
+usage: MLP.py [-h] [--ds {youtube,imdb,yelp,agnews,spouse,fbnews}]
+              [--denoise_label DENOISE_LABEL] [--batch BATCH]
+              [--hidden HIDDEN] [--lr LR] [--epoch EPOCH] [--seed SEED]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --ds {youtube,imdb,yelp,agnews,spouse,fbnews}
+                        the name of dataset.
+  --denoise_label DENOISE_LABEL
+                        the path of the denoised label that the model is
+                        trained on.
+  --batch BATCH         batch size.
+  --hidden HIDDEN       the number of hidden-layer dimensions in MLP.
+  --lr LR               learning rate of MLP.
+  --epoch EPOCH         the number of epoches.
+  --seed SEED           random seed.
+```
 
 ## Dataset
 Dataset:
