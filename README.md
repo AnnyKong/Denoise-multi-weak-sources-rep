@@ -51,6 +51,7 @@ Dataset:
 - spouse
 - yelp
 - youtube
+- fbnews (New!)
 
 The required data are stored as *.pt file, and each record includes the following information:
    - the original document text ('text')
